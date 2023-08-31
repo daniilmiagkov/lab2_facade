@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>lab3</title>
+</head>
+<body>
+<main class="main">
+  <div class="tv" id="tv">
+    <canvas id="canvasVolume" class="canvas" width="100px" height="50px"></canvas>
+    <div class="logo-channel"><p id="logo-channel"></p></div>
+    <input type="text" id="input-channel" class="input-channel">
+    <!--<button class="button button-input" id="button-input">ok</button>-->
+  </div>
+
+  <div class="controls">
+  <div class="TVRemoteControl">
+    <button id="power-ordinary" class="button button-power"></button>
+    <div id="numbers" class="numbers">
+
+    </div>
+    <div class="switching">
+    <div class="volume">
+      <button id="volume-ordinary__button-up"
+              class="volume__button button">
+        +
+      </button>
+      <button id="volume-ordinary__button-down"
+              class="button volume__button">
+        -
+      </button>
+    </div>
+    <div class="channel">
+      <button id="channel-ordinary__button-up"
+              class="button channel__button">
+        &#708;
+      </button>
+      <button id="channel-ordinary__button-down"
+              class="button channel__button">
+        &#709;
+      </button>
+    </div>
+    </div>
+  </div>
+  <div class="TVRemoteControl TVRemoteControl_Smart">
+    <button id="power-smart" class="button button-power"></button>
+    <!--<button id="buttonFind" class="button button-find">
+      <img src="public/img/find.png" alt="поиск" class="image-find">
+    </button>-->
+
+    <div class="switching switching-smart">
+
+    <div class="volume">
+      <button id="volume-smart__button-up"
+              class="button volume__button">
+        +
+      </button>
+      <button id="volume-smart__button-down"
+              class="button volume__button">
+        -
+      </button>
+    </div>
+    <div class="channel">
+      <button id="channel-smart__button-up"
+              class="button channel__button">
+        &#708;
+      </button>
+      <button id="channel-smart__button-down"
+              class="button channel__button">
+        &#709;
+      </button>
+    </div>
+    </div>
+  </div>
+  </div>
+</main>
+</body>
+<script src="frontend.js"></script>
+</html>

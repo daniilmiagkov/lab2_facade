@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: fit-content;
+  height: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.input-channel, .input-channel:focus {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-channel {
+  display: block;
+  margin: 10px auto;
+  height: 20px;
+  font-size: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.button-input {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+.logo-channel {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 26px;
+  width: 100px;
+  height: 100px;
+  margin: 110px auto 20px;
+  background-color: white;
+  border: none;
+}
+
+.canvas {
+  display: block;
+  /*
+  background-color: white;
+  */
+  margin: 15px auto 30px;
+  width: 100px;
+  border-radius: 2px;
+  height: 50px;
+}
+
+.tv {
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  /*
+  background-color: white;
+  */
+  border-radius: 5px;
+  border: 5px solid black;
+
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.TVRemoteControl {
+  background-color: #2f2f2f;
+  width: 140px;
+  border-radius: 10px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TVRemoteControl.TVRemoteControl_Smart {
+  width: 140px;
+  height: 350px;
+  border-radius: 60% 60% 90% 90%;
+}
+
+.switching {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 90px;
+  justify-content: space-between;
+}
+
+.volume, .channel {
+  width: 30px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.volume__button, .channel__button {
+  width: 30px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: white;
+  border: none;
+}
+
+.button:hover {
+  background-color: #c8d9e7;
+
+}
+
+.button:active {
+  transform: translate(1px, 1px);
+  transition-duration: 0s;
+}
+
+.button-power {
+  margin: 20px auto;
+  width: 20px;
+  height: 30px;
+  border-radius: 10px;
+
+}
+
+.indicator-power {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: red;
+  margin: 10px auto 0;
+}
+
+.numbers {
+  margin: 0 auto;
+  width: 90px;
+  justify-items: center;
+  display: grid;
+  row-gap: 4px;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3,1fr);
+
+}
+
+
+.numbers__button {
+  width: 26px;
+  height: 30px;
+  border-radius: 12px;
+
+}
+
+.number_9 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.button-find {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.image-find {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.switching.switching-smart {
+  margin: 20px auto;
+  width: 70px;
+}
